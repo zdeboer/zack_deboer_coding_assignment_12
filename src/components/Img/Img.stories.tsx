@@ -18,7 +18,7 @@ type Story = StoryObj<ImgProps>;
 
 export const Default: Story = {
   args: {
-    src: 'https://via.placeholder.com/300x150',
+    src: "https://img.freepik.com/premium-vector/gray-picture-person-with-gray-background_1197690-22.jpg?semt=ais_rp_progressive&w=740&q=80",
     alt: 'Placeholder image',
     disabled: false,
   },
@@ -26,7 +26,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    src: 'https://via.placeholder.com/300x150',
+    src: "https://img.freepik.com/premium-vector/gray-picture-person-with-gray-background_1197690-22.jpg?semt=ais_rp_progressive&w=740&q=80",
     alt: 'Disabled image',
     disabled: true,
   },

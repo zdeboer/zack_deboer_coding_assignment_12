@@ -21,7 +21,7 @@ export const Default: Story = {
   args: {
     title: 'Hero Title',
     subtitle: 'Hero subtitle text',
-    backgroundImage: "https://img.freepik.com/free-vector/young-superhero-boy-costume_1308-168746.jpg?semt=ais_wordcount_boost&w=740&q=80",
+    backgroundImage: "https://smithworks.marketing/hubfs/hero-banner.webp",
     disabled: false,
   },
 };

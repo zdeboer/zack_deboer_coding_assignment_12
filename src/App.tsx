@@ -46,12 +46,12 @@ function App() {
 
       <RadioButton label="Radio Option" name="group1" />
 
-      <Img src="https://via.placeholder.com/300x150" alt="Example" />
+      <Img src="https://img.freepik.com/premium-vector/gray-picture-person-with-gray-background_1197690-22.jpg?semt=ais_rp_progressive&w=740&q=80" alt="Example" />
 
       <HeroImage
         title="Hero Title"
         subtitle="Hero subtitle"
-        backgroundImage="https://via.placeholder.com/800x200"
+        backgroundImage="https://smithworks.marketing/hubfs/hero-banner.webp"
       />
 
       <Card title="Card Title">This is card content.</Card>
