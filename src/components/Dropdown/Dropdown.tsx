@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { DropdownProps } from './Dropdown.types';
 
-const StyledSelect = styled.select<{ $backgroundColor?: string; $disabled?: boolean }>`
+const StyledSelect = styled.select<{
+  $backgroundColor?: string;
+  $disabled?: boolean;
+}>`
   padding: 0.5rem;
   border-radius: 4px;
   border: 1px solid #cccccc;
@@ -23,7 +26,11 @@ export const Dropdown: React.FC<DropdownProps> = ({
   backgroundColor,
 }) => {
   return (
-    <StyledSelect $backgroundColor={backgroundColor} $disabled={disabled} disabled={disabled}>
+    <StyledSelect
+      $backgroundColor={backgroundColor}
+      $disabled={disabled}
+      disabled={disabled}
+    >
       {options.map((opt) => (
         <option key={opt.value} value={opt.value}>
           {opt.label}

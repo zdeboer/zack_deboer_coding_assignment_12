@@ -9,6 +9,9 @@ const StyledTd = styled.td<{ $disabled?: boolean }>`
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'default')};
 `;
 
-export const TableCell: React.FC<TableSectionProps> = ({ children, disabled = false }) => {
+export const TableCell: React.FC<TableSectionProps> = ({
+  children,
+  disabled = false,
+}) => {
   return <StyledTd $disabled={disabled}>{children}</StyledTd>;
 };

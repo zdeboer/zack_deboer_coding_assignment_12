@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { CardProps } from './Card.types';
 
-const CardWrapper = styled.div<{ $backgroundColor?: string; $disabled?: boolean }>`
+const CardWrapper = styled.div<{
+  $backgroundColor?: string;
+  $disabled?: boolean;
+}>`
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

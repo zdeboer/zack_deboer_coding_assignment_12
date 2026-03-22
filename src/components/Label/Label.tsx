@@ -6,7 +6,8 @@ const StyledLabel = styled.span<{ $color?: string; $disabled?: boolean }>`
   display: inline-block;
   padding: 0.25rem 0.5rem;
   color: ${({ $color }) => $color || '#333333'};
-  background-color: ${({ $disabled }) => ($disabled ? '#cccccc' : 'transparent')};
+  background-color: ${({ $disabled }) =>
+    $disabled ? '#cccccc' : 'transparent'};
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'default')};
   width: 100%;
   max-width: 300px;
@@ -16,7 +17,11 @@ const StyledLabel = styled.span<{ $color?: string; $disabled?: boolean }>`
   }
 `;
 
-export const Label: React.FC<LabelProps> = ({ text, disabled = false, color }) => {
+export const Label: React.FC<LabelProps> = ({
+  text,
+  disabled = false,
+  color,
+}) => {
   return (
     <StyledLabel $color={color} $disabled={disabled}>
       {text}

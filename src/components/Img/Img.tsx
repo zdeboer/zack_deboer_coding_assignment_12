@@ -4,7 +4,8 @@ import { ImgProps } from './Img.types';
 
 const Wrapper = styled.div<{ $disabled?: boolean }>`
   display: inline-block;
-  background-color: ${({ $disabled }) => ($disabled ? '#cccccc' : 'transparent')};
+  background-color: ${({ $disabled }) =>
+    $disabled ? '#cccccc' : 'transparent'};
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'default')};
   width: 100%;
   max-width: 300px;

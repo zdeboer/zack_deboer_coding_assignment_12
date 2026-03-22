@@ -14,7 +14,7 @@ describe('Card', () => {
     const { container } = render(
       <Card title="Disabled Card" disabled>
         Content
-      </Card>
+      </Card>,
     );
     const wrapper = container.firstChild as HTMLElement;
     expect(wrapper).toHaveStyle('background-color: #cccccc');

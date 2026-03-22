@@ -21,7 +21,7 @@ export const Default: Story = {
   args: {
     title: 'Hero Title',
     subtitle: 'Hero subtitle text',
-    backgroundImage: "https://smithworks.marketing/hubfs/hero-banner.webp",
+    backgroundImage: 'https://smithworks.marketing/hubfs/hero-banner.webp',
     disabled: false,
   },
 };
@@ -34,4 +34,3 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
-

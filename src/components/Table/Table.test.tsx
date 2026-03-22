@@ -28,7 +28,7 @@ const renderSampleTable = (disabled = false) =>
           <TableCell disabled={disabled}>Footer 2</TableCell>
         </TableRow>
       </TableFooter>
-    </Table>
+    </Table>,
   );
 
 describe('Table', () => {

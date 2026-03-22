@@ -7,6 +7,9 @@ const StyledTfoot = styled.tfoot<{ $disabled?: boolean }>`
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'default')};
 `;
 
-export const TableFooter: React.FC<TableSectionProps> = ({ children, disabled = false }) => {
+export const TableFooter: React.FC<TableSectionProps> = ({
+  children,
+  disabled = false,
+}) => {
   return <StyledTfoot $disabled={disabled}>{children}</StyledTfoot>;
 };

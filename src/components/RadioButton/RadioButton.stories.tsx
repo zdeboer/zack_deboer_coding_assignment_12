@@ -34,4 +34,3 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
-

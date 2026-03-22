@@ -2,7 +2,13 @@ import React from 'react';
 import { Button } from './components/Button';
 import { Label } from './components/Label';
 import { Text } from './components/Text';
-import { Table, TableHeader, TableRow, TableCell, TableFooter } from './components/Table';
+import {
+  Table,
+  TableHeader,
+  TableRow,
+  TableCell,
+  TableFooter,
+} from './components/Table';
 import { Dropdown } from './components/Dropdown';
 import { RadioButton } from './components/RadioButton';
 import { Img } from './components/Img';
@@ -46,7 +52,10 @@ function App() {
 
       <RadioButton label="Radio Option" name="group1" />
 
-      <Img src="https://img.freepik.com/premium-vector/gray-picture-person-with-gray-background_1197690-22.jpg?semt=ais_rp_progressive&w=740&q=80" alt="Example" />
+      <Img
+        src="https://img.freepik.com/premium-vector/gray-picture-person-with-gray-background_1197690-22.jpg?semt=ais_rp_progressive&w=740&q=80"
+        alt="Example"
+      />
 
       <HeroImage
         title="Hero Title"

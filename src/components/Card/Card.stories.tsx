@@ -33,4 +33,3 @@ export const Disabled: Story = {
     children: 'This card is disabled.',
   },
 };
-

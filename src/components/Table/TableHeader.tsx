@@ -7,6 +7,9 @@ const StyledThead = styled.thead<{ $disabled?: boolean }>`
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'default')};
 `;
 
-export const TableHeader: React.FC<TableSectionProps> = ({ children, disabled = false }) => {
+export const TableHeader: React.FC<TableSectionProps> = ({
+  children,
+  disabled = false,
+}) => {
   return <StyledThead $disabled={disabled}>{children}</StyledThead>;
 };

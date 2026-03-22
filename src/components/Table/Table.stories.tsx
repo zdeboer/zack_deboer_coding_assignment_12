@@ -44,7 +44,7 @@ const SampleTable = (args: TableProps) => (
 export const Default: Story = {
   args: {
     disabled: false,
-    children: null
+    children: null,
   },
   render: (args) => <SampleTable {...args} />,
 };
@@ -55,4 +55,3 @@ export const Disabled: Story = {
   },
   render: (args) => <SampleTable {...args} />,
 };
-

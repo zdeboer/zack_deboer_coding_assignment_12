@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { HeroImageProps } from './HeroImage.types';
 
-const HeroWrapper = styled.div<{ $backgroundImage: string; $disabled?: boolean }>`
+const HeroWrapper = styled.div<{
+  $backgroundImage: string;
+  $disabled?: boolean;
+}>`
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -10,7 +13,8 @@ const HeroWrapper = styled.div<{ $backgroundImage: string; $disabled?: boolean }
   background-image: ${({ $backgroundImage }) => `url(${$backgroundImage})`};
   background-size: cover;
   background-position: center;
-  background-color: ${({ $disabled }) => ($disabled ? '#cccccc' : 'transparent')};
+  background-color: ${({ $disabled }) =>
+    $disabled ? '#cccccc' : 'transparent'};
   cursor: ${({ $disabled }) => ($disabled ? 'not-allowed' : 'default')};
   overflow: hidden;
 
@@ -18,7 +22,8 @@ const HeroWrapper = styled.div<{ $backgroundImage: string; $disabled?: boolean }
     content: '';
     position: absolute;
     inset: 0;
-    background-color: ${({ $disabled }) => ($disabled ? 'rgba(0,0,0,0.3)' : 'transparent')};
+    background-color: ${({ $disabled }) =>
+      $disabled ? 'rgba(0,0,0,0.3)' : 'transparent'};
   }
 
   @media (max-width: 600px) {

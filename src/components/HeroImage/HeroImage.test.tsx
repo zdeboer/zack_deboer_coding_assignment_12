@@ -10,7 +10,7 @@ describe('HeroImage', () => {
         title="Test Hero"
         subtitle="Subtitle"
         backgroundImage="test.jpg"
-      />
+      />,
     );
     const titleElement = screen.getByText('Test Hero');
     expect(titleElement).toBeVisible();
@@ -18,11 +18,7 @@ describe('HeroImage', () => {
 
   test('has grey background when disabled (via background-color)', () => {
     const { container } = render(
-      <HeroImage
-        title="Disabled Hero"
-        backgroundImage="test.jpg"
-        disabled
-      />
+      <HeroImage title="Disabled Hero" backgroundImage="test.jpg" disabled />,
     );
     const wrapper = container.firstChild as HTMLElement;
     expect(wrapper).toHaveStyle('background-color: #cccccc');
